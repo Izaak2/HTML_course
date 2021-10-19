@@ -1,0 +1,46 @@
+body {
+    background-image: url(small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+    works for any h1 
+*/
+h1 {
+    
+    text-align: center;
+    text-shadow: 2px 2px 2px yellow;
+}
+
+h2 {
+    color:rgb(255,255,25);
+    text-shadow: 2px 2px 2px white;
+}
+/*
+    button class for example. same styling in multiple areas.
+*/
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: auto;
+}
+
+.borderImg {
+    border: 5px solid yellow;
+    box-shadow: 10px 10px 8px red;
+    
+}
+
+.container {
+    background: linear-gradient(to right, #00ccff, #00ffff);
+    box-shadow: 3px 5px 8px black;
+}
+
+/*
+    Mainly used for JavaScript
+*/
+#circle {
+    color: darkred;
+    font-size: 40px;
+}
