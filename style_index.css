@@ -7,7 +7,7 @@ img.profile {
     width: 30%;   
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    
 }
 .github_link {
     text-align: center;
@@ -34,9 +34,11 @@ img.profile {
 .table, td ,tr {
     border: 2px solid black;
     border-collapse: collapse;
+}
+
+.table tr {
     font-size: 20px;
     text-align: center;
-    
 }
 
 .table{

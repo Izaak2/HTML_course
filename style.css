@@ -6,9 +6,11 @@ body {
 /*
     works for any h1 
 */
-h1 {
-    
+
+h1, h2 {
     text-align: center;
+}
+h1 {
     text-shadow: 2px 2px 2px yellow;
 }
 
@@ -27,6 +29,7 @@ h2 {
 }
 
 .borderImg {
+    width: 50%;
     border: 5px solid yellow;
     box-shadow: 10px 10px 8px red;
     
@@ -37,10 +40,11 @@ h2 {
     box-shadow: 3px 5px 8px black;
 }
 
-/*
-    Mainly used for JavaScript
-*/
-#circle {
-    color: darkred;
-    font-size: 40px;
+ul li {
+    color:white;
+    font-size: 20px;
+}
+
+ul > li {
+    colot 
 }
