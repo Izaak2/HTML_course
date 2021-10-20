@@ -15,9 +15,39 @@ body {
 nav {
     width: 100%; /*taking 100% of the avaialbe space */
     margin: 0;
-        
+    
 }
 
 nav ul {
     background-color: #eee;
+    overflow: hidden; /* any of the elemtats that are too big to fit for the screen are setting hidden | helping with user experiance*/
+    margin: 0; 
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none; /*guarantee no bullets points*/
+}
+
+ul.topnav li {
+    float: left; /* inline elements to the left */
+}
+
+ul.topnav li.topnav-right {
+    float: right; /* inline elements to the left */
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px; /*making sure that shrinking will not change the size of font lower than 16px | could be done in a way: font-size: 16px; */
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: white;
 }
