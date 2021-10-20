@@ -1,3 +1,14 @@
+body {
+    background: linear-gradient(to bottom right, #ffff, 90%, #ff0000);
+}
+
+img.profile {
+    display: block;
+    width: 30%;   
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
 .github_link {
     text-align: center;
     font-size: 60px;
@@ -20,5 +31,24 @@
     text-shadow: 5px 5px 5px black;
 }
 
+.table, td ,tr {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    
+}
 
+.table{
+    width: 100%;
+}
 
+img.album_pic {
+    width: 100px;
+    height: 100px:
+}
+
+h1, h2 {
+    text-align: center;
+    text-shadow: 1px 1px 2px
+}
