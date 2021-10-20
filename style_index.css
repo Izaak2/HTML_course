@@ -1,0 +1,24 @@
+.github_link {
+    text-align: center;
+    font-size: 60px;
+}
+
+.github_link a:active {
+    color: yellow;
+}
+
+.github_link a:visited {
+    color: indianred;
+}
+
+.github_link a:link {
+    color: red;
+}
+
+.github_link a:hover {
+    color: orangered;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+
