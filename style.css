@@ -101,7 +101,9 @@ ul.topnav li.dropdownIcon {
     display: none;
 }
 
+
 /*############## Custom Styles ###################*/
+/*############## Section 1 ###################*/
 #section-1-gradient {
     background: #076DFF; /*for browsers that not support gradient*/
     background: linear-gradient(#076DFF, #65a5ff)
@@ -132,7 +134,10 @@ input[type="text"] {
     padding: 5px;
     border-radius: 7px;
 }
-
+/*############## Section 2 ###################*/
+.sectionTwo .sectionTwoImg{
+    margin-left: 10%;
+}
 /*############## Mobile styles ###################*/
 @media screen and (max-width: 680px) {
     /* allows to keep home on the top bar */
@@ -178,6 +183,7 @@ input[type="text"] {
     }
     
     /*adding margin of 0 is a godd practise. */
+    .col-6,
     .col-6 {
         width: 100%;
         margin: 0px;
