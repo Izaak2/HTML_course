@@ -135,9 +135,30 @@ input[type="text"] {
     border-radius: 7px;
 }
 /*############## Section 2 ###################*/
-.sectionTwo .sectionTwoImg{
-    margin-left: 10%;
+.sectionTwo {
+    padding-top: 0;
 }
+
+.sectionTwo img.sectionTwoImg {
+    display: block;  
+    margin: auto;
+}
+
+h1.sectionTwo{
+    text-align: center;
+    font-size: 40px;
+}
+
+h2.sectionTwo{
+    text-align: center;
+}
+
+p.sectionTwo{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
 /*############## Mobile styles ###################*/
 @media screen and (max-width: 680px) {
     /* allows to keep home on the top bar */
