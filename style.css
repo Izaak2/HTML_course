@@ -21,6 +21,12 @@ body {
     margin: 0; /*making sure that everything is sucked to the edges */
 }
 
+.container {
+    width: 100%; /*making sure that the content takes 100% of the website*/
+    margin: auto; /* keeps all of the content in the middle*/
+    padding-top: 4%; /* separates each section by some padding on the top and bottom*/
+    padding-bottom: 4%;
+}
 /*############## Nav Bar ###################*/
 
 nav {
