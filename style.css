@@ -27,6 +27,34 @@ body {
     padding-top: 4%; /* separates each section by some padding on the top and bottom*/
     padding-bottom: 4%;
 }
+
+.row {
+    width: 100%;
+    display: flex; /*changing size with the screen*/
+    flex-wrap: wrap; /*all of the elements inside this row are wrap underneaf.*/
+    align-items: center; 
+}
+
+/*after action*/
+.row::after {
+    display: table;
+    clear: both; /*removes any floats that are inherited*/
+    content="";
+}
+
+.col1 {width: 8.33%}
+.col2 {width: 16.33%}
+.col3 {width: 25%}
+.col4 {width: 33.33%}
+.col5 {width: 41.66%}
+.col6 {width: 50%}
+.col7 {width: 58.33%}
+.col8 {width: 66.66%}
+.col9 {width: 75%}
+.col10 {width: 83.33%}
+.col11 {width: 91.66%}
+.col12 {width: 100%}
+
 /*############## Nav Bar ###################*/
 
 nav {
@@ -69,10 +97,39 @@ ul.topnav li a:hover {
     color: white;
 }
 
-ul.topnav li.dropdown-icon {
+ul.topnav li.dropdownIcon {
     display: none;
 }
 
+/*############## Custom Styles ###################*/
+#section-1-gradient {
+    background: #076DFF; /*for browsers that not support gradient*/
+    background: linear-gradient(#076DFF, #65a5ff)
+}
+
+/* It is flex hence it build whole section and then see how it looks like. */
+.leftSide-col {
+    margin-left:30%;
+    
+}
+
+h1.sectionOne {
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px
+}
+
+form h2 {
+    color:white;
+}
+/* atribute selector */
+input[type="text"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100%;
+    padding: 5px;
+}
 /*############## Mobile styles ###################*/
 @media screen and (max-width: 680px) {
     /* allows to keep home on the top bar */
