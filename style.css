@@ -1,3 +1,10 @@
+/*
+    putting elemtnents as blocks makes easier to position them later.
+
+    don't use IDs for styles, they are meant for JavaScript.
+
+    Use JavaScript in external files.
+*/
 /*############## Defaults ###################*/
 nav, 
 header, 
@@ -61,6 +68,32 @@ ul.topnav li.dropdown-icon {
     ul.topnav li:not(:nth-child(1)) { /* not selector :not() | :nth-chiled() choosign which chiled should not be affected/ */
         display: none;
     }
+    
+    ul.topnav li.dropdown-icon {
+        display: block; 
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown_icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative; /* making sure that navbar will not move and be weird */
+    }
+    
+    ul.topnav.responsive li {
+        display: inline; /* making usre that there are lined together in a row */
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+        
 }
 
 

@@ -9,15 +9,28 @@
 
 <body>
     <nav>
-        <ul class="topnav">
-            <li><a href="#home">Home</a></li>
+        <ul class="topnav" id="dropdownClick">
+            <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#news">News</a></li>
             <li class="topnav-right"><a href="#signin">Sign In</a></li>
             <li class="topnav-right"><a href="#sigup">Sign Up</a></li>
-            <li class="dropdown-icon"><a href="">&#9776;</a></li> <!-- mobile adaptable | unicodes represents default emoji, found on unicode-table.com */ -->
+            <li class="dropdown-icon"><a href="javascript:void(0);" onclik="dropdown_menu()">&#9776;</a></li> <!-- mobile adaptable | unicodes represents default emoji, found on unicode-table.com */ In href there is a javascript line, that browser reads as undifeiend page, and therefore stays at the same page.-->
         </ul>
     </nav>
+    
+    <script>
+        function dropdown_menu(){
+            var x = document.getElementById("dropdownClick"); // document allows to access our HTML page | getElementById("name") allows to get an element by its ID
+            
+            if(x.className === "topnav") {
+                x.className += " responsive"; // change topnav to "topnav.responsive"
+            } else{
+                    x.className = "topnav";
+                }
+            
+        }
+    </script>
     
 </body>
 </html>
