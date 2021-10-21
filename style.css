@@ -70,7 +70,12 @@ ul.topnav li.dropdown-icon {
 /*############## Mobile styles ###################*/
 @media screen and (max-width: 680px) {
     /* allows to keep home on the top bar */
-    ul.topnav li:not(:nth-child(1)){ 
+    /* 
+        :not means that the thing in brackets will not be affected.
+        :nth-child(n) chooses which element will not be affected where n
+    is the number.
+    */
+    ul.topnav li:not(:nth-child(1)){  
         display: none;
     }
     
@@ -80,14 +85,18 @@ ul.topnav li.dropdown-icon {
         float: right;
     }
     
-    /* holds menu button in the corner */
+    /*  Holds menu button in the corner.
+        An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+    */
     ul.topnav.responsive li.dropdownIcon {
     position: absolute;
     top: 0;
     right: 0;
     }
    
-    
+    /*
+        An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+    */
     ul.topnav.responsive {
         position: relative; 
     }
