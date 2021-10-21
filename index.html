@@ -15,21 +15,20 @@
             <li><a href="#news">News</a></li>
             <li class="topnav-right"><a href="#signin">Sign In</a></li>
             <li class="topnav-right"><a href="#sigup">Sign Up</a></li>
-            <li class="dropdown-icon"><a href="javascript:void(0);" onclik="dropdown_menu()">&#9776;</a></li> <!-- mobile adaptable | unicodes represents default emoji, found on unicode-table.com */ In href there is a javascript line, that browser reads as undifeiend page, and therefore stays at the same page.-->
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li> <!-- mobile adaptable | unicodes represents default emoji, found on unicode-table.com */ In href there is a javascript line, that browser reads as undifeiend page, and therefore stays at the same page.-->
         </ul>
     </nav>
     
+    <!-- JS is here only becouse we will later in the course talk about it and we will learn how to put it in an external file-->
     <script>
-        function dropdown_menu(){
-            var x = document.getElementById("dropdownClick"); // document allows to access our HTML page | getElementById("name") allows to get an element by its ID
-            
-            if(x.className === "topnav") {
-                x.className += " responsive"; // change topnav to "topnav.responsive"
-            } else{
-                    x.className = "topnav";
-                }
-            
-        }
+     function dropdownMenu() {
+         var x = document.getElementById("dropdownClick");
+         if (x.className === "topnav") {
+             x.className += " responsive";
+         } else {
+             x.className = "topnav";
+         }
+     } 
     </script>
     
 </body>

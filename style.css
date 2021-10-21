@@ -4,6 +4,10 @@
     don't use IDs for styles, they are meant for JavaScript.
 
     Use JavaScript in external files.
+
+    Emoji, found on unicode-table.com.
+
+    Display and position can be easily overwritten.
 */
 /*############## Defaults ###################*/
 nav, 
@@ -65,37 +69,41 @@ ul.topnav li.dropdown-icon {
 
 /*############## Mobile styles ###################*/
 @media screen and (max-width: 680px) {
-    ul.topnav li:not(:nth-child(1)) { /* not selector :not() | :nth-chiled() choosign which chiled should not be affected/ */
+    /* allows to keep home on the top bar */
+    ul.topnav li:not(:nth-child(1)){ 
         display: none;
     }
     
-    ul.topnav li.dropdown-icon {
-        display: block; 
+    /* holds signs links to the right side. */
+    ul.topnav li.dropdownIcon {
+        display: block;
         float: right;
     }
     
-    ul.topnav.responsive li.dropdown_icon {
-        position: absolute;
-        top: 0;
-        right: 0;
+    /* holds menu button in the corner */
+    ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
     }
+   
     
     ul.topnav.responsive {
-        position: relative; /* making sure that navbar will not move and be weird */
+        position: relative; 
     }
     
     ul.topnav.responsive li {
-        display: inline; /* making usre that there are lined together in a row */
+        display: inline;
         float: none;
     }
     
     ul.topnav.responsive li a {
         display: block;
-        text-align: left;
+        text-align: center;
     }
-        
+    
+    
 }
-
 
 
 
