@@ -318,7 +318,7 @@ footer.one {
     /*############## Section 4 ###################*/
     div.mobileFooter {
         width: 50%;
-        display block;
+        display: block;
     }
 
     
