@@ -9,6 +9,7 @@
 
     Display and position can be easily overwritten.
 */
+
 /*############## Defaults ###################*/
 nav, 
 header, 
@@ -19,6 +20,29 @@ footer {
 body {
     line-height: 1; /*space between text*/
     margin: 0; /*making sure that everything is sucked to the edges */
+}
+
+label {
+    font-size: 35px;
+    font-weight: bolder;
+    
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
 }
 
 .container {
@@ -55,6 +79,9 @@ body {
 .col-11 {width: 91.66%}
 .col-12 {width: 100%}
 
+* {
+    box-sizing: border-box;
+}
 /*############## Nav Bar ###################*/
 
 nav {
@@ -134,9 +161,42 @@ input[type="text"] {
     padding: 5px;
     border-radius: 7px;
 }
+div.videoContainer {
+    overflow: hidden;
+}
 /*############## Section 2 ###################*/
-.sectionTwo .sectionTwoImg{
-    margin-left: 10%;
+h1.section2header {
+    font-size: 65px;
+    text-align: center;
+}
+
+div.box {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 
+        0 2px 3px 0 rgba(0,0,0,.1);
+    margin: 2%;
+    border-radius: 2%;
+    padding: 2% 1% 3% 1%;
+    overflow: hidden;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.icon img {
+width: 90%;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
 }
 /*############## Mobile styles ###################*/
 @media screen and (max-width: 680px) {
@@ -184,7 +244,7 @@ input[type="text"] {
     
     /*adding margin of 0 is a godd practise. */
     .col-6,
-    .col-6 {
+    .col-4 {
         width: 100%;
         margin: 0px;
     }
@@ -202,8 +262,12 @@ input[type="text"] {
         display: relative;
         width: 100%;
         margin: 0;
-        overflow: hidden;
     }
+    
+    div.box {
+        display: block;
+    }
+
 }
 
 
