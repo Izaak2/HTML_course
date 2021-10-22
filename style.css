@@ -56,6 +56,11 @@ img {
     margin: auto;
 }
 
+footer {
+    background-color: black;
+    
+}
+
 .container {
     width: 100%; /*making sure that the content takes 100% of the website*/
     margin: auto; /* keeps all of the content in the middle*/
@@ -206,6 +211,34 @@ div.slopeIcon img {
     overflow: hidden;
 }
 
+/*############## Section 4 ###################*/
+
+footer.one h1 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+footer.one ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 5px;
+}
+
+footer.one ul li { 
+    line-height: 1.2;
+}
+
+footer.one ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer.one {
+    padding-left: 10%;
+}
+
 /*############## Mobile styles ###################*/
 @media screen and (max-width: 680px) {
     /* allows to keep home on the top bar */
@@ -254,7 +287,7 @@ div.slopeIcon img {
     .col-6,
     .col-4,
     .col-7,
-    .col-5{
+    .col-5 {
         width: 100%;
         margin: 0px;
     }
@@ -277,9 +310,18 @@ div.slopeIcon img {
     div.box {
         display: block;
     }
+    
     img {
         width: 98%;
     }
+    
+    /*############## Section 4 ###################*/
+    div.mobileFooter {
+        width: 50%;
+        display block;
+    }
+
+    
 }
 
 
